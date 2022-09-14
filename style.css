@@ -1,0 +1,119 @@
+body {
+    background-image: url(kek.png);
+    /* arka plan resmi ekledim*/
+    background-size: 100%;
+    /*arka plan resminin boyutunu ayarladım*/
+    background-repeat: repeat-y;
+    /*resmin tekrar etmemesini istedim*/
+    background-position: auto;
+    /*otomatik sayfaya konumlanmasını istedim*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*linkleri ayırdım, button olarak kullanacağım linke class uyguladım a.button*/
+a.button:link,
+/*link ve visited özelliğine eklemeler yaptım*/
+a.button:visited {
+    background-color: rgba(207, 147, 212, 0.801);
+    color: white;
+    padding: 10px 20px;
+    /*buton görünümündeki kolonların boyutlarını ayarladım*/
+    border: 1px solid rgb(15, 163, 168);
+    /*kenarlık ekledim*/
+    text-align: center;
+    text-decoration: none;
+    /*alt çizgi olmasın*/
+    display: inline-flex;
+    /*yazı kadar alan kapsaması için kullandım*/
+
+}
+
+/*fare üzerine geldiğinde:*/
+a.button:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(15, 163, 168);
+    background-color: #1fa079;
+    /*  transition: 0.5s;*/
+}
+
+
+h1 {
+    font-family: Brush Script MT;
+    text-shadow: 3px 3px rgba(234, 19, 253, 0.801);
+    color: rgb(230, 173, 217);
+    font-size: 80px;
+    margin: 5px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Courier New;
+    font-size: 15px;
+    color: rgb(145, 0, 111);
+    text-align: center;
+}
+
+h6 {
+    font-family: Courier New;
+    color: rgb(81, 56, 172);
+
+}
+
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    /*  border: 3px solid #a9ce7694;*/
+}
+
+
+
+.socialbar .social-media {
+    position: absolute;
+    bottom: 30;
+    left: 43%;
+    /*sol taraftan konumlandırmak için*/
+    transform: translate(-10%);
+    display: flex;
+    /* y eksenine göre konumlandırmak için*/
+}
+
+.socialbar .social-media a {
+    display: inline;
+    /* imagelerin birbirleri arasındaki konum*/
+    width: 50px;
+    font-size: large;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 1px;
+    color: #cf3da3;
+    transition: 0.6s;
+    /*fare üzerine geldiğinde ki geçiş hızı*/
+}
+
+.socialbar .social-media a:hover {
+    font-size: xx-large;
+}
+
+div.gif {
+    margin: auto;
+    width: 100px;
+}
+
+div.gif img {
+    width: 100%;
+    height: auto;
+}
+
+div.ornek {
+    width: 220px;
+    margin: auto;
+}
+
+div.yan {
+    float: left;
+}
